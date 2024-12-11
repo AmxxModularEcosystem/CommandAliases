@@ -1,0 +1,15 @@
+[
+    {
+        "Alias": "nightvision",
+        "Command": "say /menu"
+    },
+    {
+        "Alias": [
+            "say /vm",
+            "say /vipmenu",
+            "say_team /vm",
+            "say_team /vipmenu"
+        ],
+        "Command": "vipmenu"
+    }
+]
