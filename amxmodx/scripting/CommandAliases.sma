@@ -180,7 +180,7 @@ public plugin_natives() {
     get_string(Arg_Alias, alias, charsmax(alias));
     get_string(Arg_Command, command, charsmax(command));
 
-    TrieSetString(aliases, alias, command);
+    AddAlias(alias, command);
 }
 
 // Utils
