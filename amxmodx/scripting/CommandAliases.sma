@@ -16,7 +16,7 @@ PluginInit() {
     }
     inited = true;
     
-    register_plugin("Command Aliases", "1.0.0", "ArKaNeMaN");
+    register_plugin("Command Aliases", "1.0.1", "ArKaNeMaN");
 
     aliases = TrieCreate();
     LoadFromFolder(CfgUtils_MakePath("CommandAliases"));
@@ -191,6 +191,10 @@ ReadArgs(out[], const outLen) {
     new paramsCount = read_argc();
 
     while (writenCells < outLen && paramPointer < paramsCount) {
+        if (writenCells > 0) {
+            out[writenCells++] = ' ';
+        }
+
         writenCells += read_argv(paramPointer, out[writenCells], outLen - writenCells);
         ++paramPointer;
     }
