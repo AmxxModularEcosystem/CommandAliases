@@ -6,7 +6,7 @@
 
 ## Настройка
 
-[Пример файла с алиасами...](./amxmodx/configs/plugins/CommandAliases/Example.json)
+[Пример файла с алиасами...](./amxmodx/configs/plugins/CommandAliases/!Example.json)
 
 Таких файлов можно создавать сколько угодно в папке `amxmodx/configs/plugins/CommandAliases`.
 
